@@ -1,0 +1,20 @@
+﻿# Principio de responsabilidad única (SRP)
+
+1.Persona: Solo maneja la información de una persona (nombre, edad, dirección, correo electrónico).
+2.CorreoElectronicoService: Solo se encarga de enviar correos electrónicos.
+3.PersonaPrinter: Solo se ocupa de imprimir los datos de una persona.
+
+Cada clase está organizada en su propia carpeta según su responsabilidad, lo que facilita la gestión y
+el mantenimiento del código sin mezclar responsabilidades.
+
+
+# por que se violenta el principio de responsabilidad única (SRP)
+
+La clase Persona está violando el principio de responsabilidad única (SRP) porque asume más de una responsabilidad:
+
+1.Gestión de datos personales: Maneja atributos como nombre, edad, direccion y correoElectronico.
+2.Envío de correos electrónicos: Tiene el método EnviarCorreoElectronico, que maneja la lógica para enviar correos.
+3.Impresión de datos: Incluye el método ImprimirDatos, que imprime la información de la persona en la consola.
+
+
+
